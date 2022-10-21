@@ -1,13 +1,14 @@
 def print_way(w,v):
     print(end="   ")
     for i in v: print(i,end=" ")
-    print("\n")
+    print("\n",end="")
     for i in v:
         print(i,end=": ")
         for j in v:
             if (i,j) in w: print(1,end=" ")
             else: print(0,end=" ")
-        print("\n")
+        print("\n",end="")
+    print("\n")
 
 
 
